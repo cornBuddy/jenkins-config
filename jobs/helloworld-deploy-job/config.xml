@@ -12,9 +12,9 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <hudson.tasks.BatchFile>
+    <hudson.tasks.Shell>
       <command>tar -zxvf $WORKSPACE/../helloworld-build-job/jsp-servlet-example.tar.gz</command>
-    </hudson.tasks.BatchFile>
+    </hudson.tasks.Shell>
   </builders>
   <publishers>
     <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
