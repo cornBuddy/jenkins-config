@@ -20,16 +20,16 @@
     <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
       <adapters>
         <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-          <credentialsId>d1cc1a1d-42e3-4a0d-a6da-6da294a4cfc4</credentialsId>
-          <url>http://172.20.0.4:8080/</url>
+          <credentialsId>8fbaa351-1deb-46a7-80b1-6ca81f854de2</credentialsId>
+          <url>http://tom-a:8080/</url>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
         <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-          <credentialsId>d1cc1a1d-42e3-4a0d-a6da-6da294a4cfc4</credentialsId>
-          <url>http://172.20.0.5:8080/</url>
+          <credentialsId>8fbaa351-1deb-46a7-80b1-6ca81f854de2</credentialsId>
+          <url>http://tom-b:8080/</url>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
         <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-          <credentialsId>d1cc1a1d-42e3-4a0d-a6da-6da294a4cfc4</credentialsId>
-          <url>http://172.20.0.6:8080/</url>
+          <credentialsId>8fbaa351-1deb-46a7-80b1-6ca81f854de2</credentialsId>
+          <url>http://tom-c:8080/</url>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
       </adapters>
       <contextPath>jsp-servlet-example</contextPath>
