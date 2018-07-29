@@ -24,6 +24,8 @@
       <command>mkdir -p $WORKSPACE/jsp-servlet-example
 git clone git@github.com:cornBuddy/jsp-servlet-example.git $WORKSPACE/jsp-servlet-example
 cd $WORKSPACE/jsp-servlet-example
+mvn package
+
 </command>
     </hudson.tasks.Shell>
   </builders>
