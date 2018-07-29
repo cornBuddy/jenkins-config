@@ -25,11 +25,11 @@
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
         <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
           <credentialsId>d1cc1a1d-42e3-4a0d-a6da-6da294a4cfc4</credentialsId>
-          <url>http://tom-b:8080/</url>
+          <url>http://172.20.0.5:8080/</url>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
         <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
           <credentialsId>d1cc1a1d-42e3-4a0d-a6da-6da294a4cfc4</credentialsId>
-          <url>http://tom-c:8080/</url>
+          <url>http://172.20.0.6:8080/</url>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
       </adapters>
       <contextPath>jsp-servlet-example</contextPath>
