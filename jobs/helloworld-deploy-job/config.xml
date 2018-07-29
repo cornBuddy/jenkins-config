@@ -12,9 +12,6 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <hudson.tasks.Shell>
-      <command>tar -zxvf $WORKSPACE/jsp-servlet-example.tar.gz</command>
-    </hudson.tasks.Shell>
     <hudson.plugins.copyartifact.CopyArtifact plugin="copyartifact@1.41">
       <project>helloworld-build-job</project>
       <filter>*.tar.gz</filter>
@@ -23,6 +20,9 @@
       <selector class="hudson.plugins.copyartifact.StatusBuildSelector"/>
       <doNotFingerprintArtifacts>false</doNotFingerprintArtifacts>
     </hudson.plugins.copyartifact.CopyArtifact>
+    <hudson.tasks.Shell>
+      <command>tar -zxvf $WORKSPACE/jsp-servlet-example.tar.gz</command>
+    </hudson.tasks.Shell>
   </builders>
   <publishers>
     <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
