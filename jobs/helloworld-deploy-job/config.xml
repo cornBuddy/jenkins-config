@@ -1,5 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -12,14 +13,14 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>tar -xzf ../helloworld-build-job/jsp-servlet-example/jsp-servlet-example.tar.gz
+      <command>tar -xzf $WORKSPACE/../helloworld-build-job/jsp-servlet-example/jsp-servlet-example.tar.gz
 </command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
     <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
       <contextPath></contextPath>
-      <war>../</war>
+      <war>jsp-servlet-example.war</war>
       <onFailure>false</onFailure>
     </hudson.plugins.deploy.DeployPublisher>
   </publishers>
