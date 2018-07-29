@@ -21,14 +21,15 @@
       <adapters>
         <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
           <credentialsId>d1cc1a1d-42e3-4a0d-a6da-6da294a4cfc4</credentialsId>
-          <url>tom_a</url>
+          <url>http://tom_a</url>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
         <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
           <credentialsId>d1cc1a1d-42e3-4a0d-a6da-6da294a4cfc4</credentialsId>
-          <url>tom_b</url>
+          <url>http://tom_b</url>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
         <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-          <url>tom_c</url>
+          <credentialsId>d1cc1a1d-42e3-4a0d-a6da-6da294a4cfc4</credentialsId>
+          <url>http://tom_c</url>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
       </adapters>
       <contextPath>/jsp-servlet-example</contextPath>
