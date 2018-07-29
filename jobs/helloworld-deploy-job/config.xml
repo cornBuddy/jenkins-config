@@ -13,7 +13,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>tar -zxvf $WORKSPACE/../helloworld-build-job/jsp-servlet-example.tar.gz</command>
+      <command>tar -zxvf $WORKSPACE/../helloworld-build-job/jsp-servlet-example/jsp-servlet-example.tar.gz</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
