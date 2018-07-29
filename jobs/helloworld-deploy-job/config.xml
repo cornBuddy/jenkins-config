@@ -32,7 +32,7 @@
           <url>http://tom-c:8080/</url>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
       </adapters>
-      <contextPath>/jsp-servlet-example</contextPath>
+      <contextPath>jsp-servlet-example</contextPath>
       <war>./jsp-servlet-example.war</war>
       <onFailure>false</onFailure>
     </hudson.plugins.deploy.DeployPublisher>
