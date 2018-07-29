@@ -14,7 +14,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>mkdir -p $WORKSPACE/jsp-servlet-example
-git pull git@github.com:cornBuddy/jsp-servlet-example.git $WORKSPACE
+git clone git@github.com:cornBuddy/jsp-servlet-example.git $WORKSPACE
 cd $WORKSPACE/jsp-servlet-example
 mvn package
 tar -czvf jsp-servlet-example.tar.gz target/jsp-servlet-example.war</command>
