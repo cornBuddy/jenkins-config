@@ -14,11 +14,12 @@
   <builders>
     <hudson.plugins.copyartifact.CopyArtifact plugin="copyartifact@1.41">
       <project>helloworld-build-job</project>
-      <filter>jsp-servlet-example/jsp-servlet-example.tar.gz</filter>
+      <filter>*.tar.gz</filter>
       <target></target>
       <excludes></excludes>
       <selector class="hudson.plugins.copyartifact.StatusBuildSelector"/>
-      <doNotFingerprintArtifacts>false</doNotFingerprintArtifacts>
+      <flatten>true</flatten>
+      <doNotFingerprintArtifacts>true</doNotFingerprintArtifacts>
     </hudson.plugins.copyartifact.CopyArtifact>
     <hudson.tasks.Shell>
       <command>tar -zxvf $WORKSPACE/jsp-servlet-example.tar.gz</command>
