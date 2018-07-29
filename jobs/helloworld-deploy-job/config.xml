@@ -20,7 +20,7 @@
     <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
       <adapters>
         <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-          <credentialsId>6e1ce8fe-b97e-4183-9da8-c4e12ae91c4d</credentialsId>
+          <credentialsId>d1cc1a1d-42e3-4a0d-a6da-6da294a4cfc4</credentialsId>
           <url>http://localhost</url>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
       </adapters>
