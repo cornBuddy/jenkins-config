@@ -44,8 +44,8 @@ ls -la  $WORKSPACE</command>
           <url>http://tom-c:8080/</url>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
       </adapters>
-      <contextPath>jsp-servlet-example</contextPath>
-      <war>**/jsp-servlet-example.war</war>
+      <contextPath>helloworld-ws</contextPath>
+      <war>**/helloworld-ws.war</war>
       <onFailure>false</onFailure>
     </hudson.plugins.deploy.DeployPublisher>
   </publishers>
