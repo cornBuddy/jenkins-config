@@ -15,11 +15,11 @@
     <hudson.tasks.Shell>
       <command>rm -rf $WORKSPACE/jsp-servlet-example || true
 mkdir -p $WORKSPACE/jsp-servlet-example
-git clone git@github.com:cornBuddy/jsp-servlet-example.git $WORKSPACE/jsp-servlet-example
-cd $WORKSPACE/jsp-servlet-example
+git clone https://github.com/jboss-developer/jboss-eap-quickstarts
+cd $WORKSPACE/jboss-eap-quickstarts/helloworld-ws
 mvn package
 cd target
-tar -czvf ../jsp-servlet-example.tar.gz jsp-servlet-example.war</command>
+tar -czvf ../helloworld-ws.tar.gz helloworld-ws.war</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
