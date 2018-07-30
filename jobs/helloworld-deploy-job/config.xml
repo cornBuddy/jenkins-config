@@ -45,7 +45,7 @@ ls -la  $WORKSPACE</command>
         </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
       </adapters>
       <contextPath>jsp-servlet-example</contextPath>
-      <war>./jsp-servlet-example.war</war>
+      <war>$WORKSPACE/jsp-servlet-example.war</war>
       <onFailure>false</onFailure>
     </hudson.plugins.deploy.DeployPublisher>
   </publishers>
