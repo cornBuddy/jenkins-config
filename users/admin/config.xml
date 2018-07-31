@@ -40,7 +40,7 @@
       <collapsed/>
     </hudson.model.PaneStatusProperties>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>#jbcrypt:$2a$10$VQhCoDpW7L3MZKHxElFAn.G0ABZBDn4rPxqWi/3rL7K3b5x8yTuu2</passwordHash>
+      <passwordHash>#jbcrypt:$2a$10$6YGA9J49o70uNEBNn8EPBuybKKm2MpvrCc7QFHTWSywdc291emX3m</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
       <authorizedKeys></authorizedKeys>
