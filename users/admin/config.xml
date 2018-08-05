@@ -46,7 +46,7 @@
       <insensitiveSearch>true</insensitiveSearch>
     </hudson.search.UserSearchProperty>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>#jbcrypt:$2a$10$ShxU1zYxLC0zGtdUgKGKf.a5UIZbKWFNuTVn06/P2IVaU6n3xj9LW</passwordHash>
+      <passwordHash>#jbcrypt:$2a$10$Zd.yCzna9kyFqs4dK0gEHuz8N86Q/f8WMP.sb9uKbOrp2iCoT9Gh2</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
   </properties>
 </user>
