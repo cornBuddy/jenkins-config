@@ -4,7 +4,7 @@
   <description></description>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAAAwiwrMmLf0A64joxQi8TxjVVb6CWA2jAOZ1Jef4cXD256DGgQwKKI2LC3GRXQ5TwIJb0hfVcsfUKCVptLPN0henQ==}</apiToken>
+      <apiToken>{AQAAABAAAABwkImUO5zNbzQfJBtrmwld661F+nhZ6FxGRNlomHV8ouXPb8WTQPWO1GXvd3Hu4QjCikzCgcLPXqtiUeH2A3pPel9ml7AS6g1N6R7VQLGh8yU7ttUUSgjOkYlhpHeH926VEimkQ+qZFsKdQGy0BPNnTQMTraQxrj2oJp0hRWe3RrM=}</apiToken>
     </jenkins.security.ApiTokenProperty>
     <hudson.plugins.greenballs.ColorBlindProperty plugin="greenballs@1.15">
       <enabledColorBlindSupport>false</enabledColorBlindSupport>
@@ -39,14 +39,14 @@
     <hudson.model.PaneStatusProperties>
       <collapsed/>
     </hudson.model.PaneStatusProperties>
-    <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>#jbcrypt:$2a$10$6YGA9J49o70uNEBNn8EPBuybKKm2MpvrCc7QFHTWSywdc291emX3m</passwordHash>
-    </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
       <authorizedKeys></authorizedKeys>
     </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
     <hudson.search.UserSearchProperty>
       <insensitiveSearch>true</insensitiveSearch>
     </hudson.search.UserSearchProperty>
+    <hudson.security.HudsonPrivateSecurityRealm_-Details>
+      <passwordHash>#jbcrypt:$2a$10$1TX0QYdjqByEWXRiWJ.8H.UNIHvCvAQc8Po0pOF6YAqzG/1lMFV6y</passwordHash>
+    </hudson.security.HudsonPrivateSecurityRealm_-Details>
   </properties>
 </user>
