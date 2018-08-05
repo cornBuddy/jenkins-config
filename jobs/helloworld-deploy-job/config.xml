@@ -28,26 +28,6 @@
 ls -la  $WORKSPACE</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers>
-    <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
-      <adapters>
-        <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-          <credentialsId>0232b632-f023-4fbd-84e5-d8065347a589</credentialsId>
-          <url>http://tom-a:8080/</url>
-        </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-        <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-          <credentialsId>0232b632-f023-4fbd-84e5-d8065347a589</credentialsId>
-          <url>http://tom-b:8080/</url>
-        </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-        <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-          <credentialsId>0232b632-f023-4fbd-84e5-d8065347a589</credentialsId>
-          <url>http://tom-c:8080/</url>
-        </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-      </adapters>
-      <contextPath>helloworld-ws</contextPath>
-      <war>**/helloworld-ws.war</war>
-      <onFailure>false</onFailure>
-    </hudson.plugins.deploy.DeployPublisher>
-  </publishers>
+  <publishers/>
   <buildWrappers/>
 </project>
