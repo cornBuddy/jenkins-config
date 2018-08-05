@@ -1,28 +1,15 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <user>
   <fullName>admin</fullName>
-  <description></description>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAABwkImUO5zNbzQfJBtrmwld661F+nhZ6FxGRNlomHV8ouXPb8WTQPWO1GXvd3Hu4QjCikzCgcLPXqtiUeH2A3pPel9ml7AS6g1N6R7VQLGh8yU7ttUUSgjOkYlhpHeH926VEimkQ+qZFsKdQGy0BPNnTQMTraQxrj2oJp0hRWe3RrM=}</apiToken>
+      <apiToken>{AQAAABAAAAAwjnQyGwQnpwlVeO43Jcx4HffFsfK+KXeAXF1BpSpJouIu5g+ylZHvIfx80HVtP7+kbcpt57UlicDhBHscjBV9jw==}</apiToken>
     </jenkins.security.ApiTokenProperty>
-    <hudson.plugins.greenballs.ColorBlindProperty plugin="greenballs@1.15">
-      <enabledColorBlindSupport>false</enabledColorBlindSupport>
-    </hudson.plugins.greenballs.ColorBlindProperty>
     <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.1.18">
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
     </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
-    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.21">
-      <emailAddress></emailAddress>
-    </hudson.tasks.Mailer_-UserProperty>
-    <jenkins.security.LastGrantedAuthoritiesProperty>
-      <roles>
-        <string>authenticated</string>
-      </roles>
-      <timestamp>1532963138563</timestamp>
-    </jenkins.security.LastGrantedAuthoritiesProperty>
+    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.21"/>
     <hudson.model.MyViewsProperty>
-      <primaryViewName></primaryViewName>
       <views>
         <hudson.model.AllView>
           <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
@@ -39,14 +26,11 @@
     <hudson.model.PaneStatusProperties>
       <collapsed/>
     </hudson.model.PaneStatusProperties>
-    <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
-      <authorizedKeys></authorizedKeys>
-    </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
     <hudson.search.UserSearchProperty>
       <insensitiveSearch>true</insensitiveSearch>
     </hudson.search.UserSearchProperty>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>#jbcrypt:$2a$10$Eapdul4WKHrMiU1BDEkj0OzOpLBABINKWqT3CdZmBhkI7KHLhMU1S</passwordHash>
+      <passwordHash>#jbcrypt:$2a$10$5o/T0/ZmXhyRbXPWbzN/f.HCQV3SeN/Qe.9k8erZ2LfBajwDkz0Xy</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
   </properties>
 </user>
