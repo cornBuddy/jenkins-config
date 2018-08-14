@@ -6,6 +6,31 @@
         <com.coravy.hudson.plugins.github.GithubProjectProperty>
             <projectUrl>https://github.com/MNT-Lab/d323dsl/</projectUrl>
         </com.coravy.hudson.plugins.github.GithubProjectProperty>
+        <hudson.model.ParametersDefinitionProperty>
+            <parameterDefinitions>
+                <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
+                    <name>BRANCH_NAME</name>
+                    <description/>
+                    <uuid>d2400de2-8697-4d96-a88a-7a25d817096f</uuid>
+                    <type>PT_BRANCH</type>
+                    <branch/>
+                    <tagFilter/>
+                    <sortMode>NONE</sortMode>
+                    <defaultValue/>
+                </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
+                <hudson.model.ChoiceParameterDefinition>
+                    <choices class="java.util.Arrays$ArrayList">
+                        <a class="string-array">
+                            <string>MNTLAB-hsakovich-child1-build-job</string>
+                            <string>MNTLAB-hsakovich-child2-build-job</string>
+                            <string>MNTLAB-hsakovich-child3-build-job</string>
+                            <string>MNTLAB-hsakovich-child4-build-job</string>
+                        </a>
+                    </choices>
+                    <name>BUILDS_TRIGGER</name>
+                </hudson.model.ChoiceParameterDefinition>
+            </parameterDefinitions>
+        </hudson.model.ParametersDefinitionProperty>
     </properties>
     <canRoam>true</canRoam>
     <disabled>false</disabled>
