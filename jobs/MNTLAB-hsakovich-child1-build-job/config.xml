@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+    <actions/>
+    <description/>
+    <keepDependencies>false</keepDependencies>
+    <properties>
+        <com.coravy.hudson.plugins.github.GithubProjectProperty>
+            <projectUrl>https://github.com/MNT-Lab/d323dsl/</projectUrl>
+        </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    </properties>
+    <canRoam>true</canRoam>
+    <disabled>false</disabled>
+    <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+    <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+    <triggers/>
+    <concurrentBuild>false</concurrentBuild>
+    <builders>
+        <hudson.tasks.Shell>
+            <command>pwd</command>
+        </hudson.tasks.Shell>
+        <hudson.tasks.Shell>
+            <command>ls -la</command>
+        </hudson.tasks.Shell>
+        <hudson.tasks.Shell>
+            <command>echo []</command>
+        </hudson.tasks.Shell>
+    </builders>
+    <publishers/>
+    <buildWrappers/>
+    <scm class="hudson.plugins.git.GitSCM">
+        <userRemoteConfigs>
+            <hudson.plugins.git.UserRemoteConfig>
+                <url>https://github.com/MNT-Lab/d323dsl.git</url>
+            </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+            <hudson.plugins.git.BranchSpec>
+                <name>**</name>
+            </hudson.plugins.git.BranchSpec>
+        </branches>
+        <configVersion>2</configVersion>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <gitTool>Default</gitTool>
+        <browser class="hudson.plugins.git.browser.GithubWeb">
+            <url>https://github.com/MNT-Lab/d323dsl/</url>
+        </browser>
+    </scm>
+</project>
