@@ -11,10 +11,10 @@
                 <org.biouno.unochoice.ChoiceParameter>
                     <name>BUILDS_TRIGGER</name>
                     <description>Select the jobs</description>
-                    <randomName>choice-parameter-107235343389048</randomName>
+                    <randomName>choice-parameter-108426420622051</randomName>
                     <visibleItemCount>1</visibleItemCount>
                     <script class="org.biouno.unochoice.model.GroovyScript">
-                        <script>["choice1", "choice2"]</script>
+                        <script>['MNTLAB-hsakovich-child1-build-job', 'MNTLAB-hsakovich-child2-build-job', 'MNTLAB-hsakovich-child3-build-job', 'MNTLAB-hsakovich-child4-build-job']</script>
                         <fallbackScript>"fallback choice"</fallbackScript>
                     </script>
                     <filterable>false</filterable>
