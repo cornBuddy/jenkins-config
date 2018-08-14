@@ -8,16 +8,30 @@
         </com.coravy.hudson.plugins.github.GithubProjectProperty>
         <hudson.model.ParametersDefinitionProperty>
             <parameterDefinitions>
-                <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
+                <hudson.model.ChoiceParameterDefinition>
+                    <choices class="java.util.Arrays$ArrayList">
+                        <a class="string-array">
+                            <string>aandryieuski</string>
+                            <string>aaranski</string>
+                            <string>akavaleu</string>
+                            <string>apatapniou</string>
+                            <string>disakau</string>
+                            <string>dzhukova</string>
+                            <string>hviniarski</string>
+                            <string>knovichuk</string>
+                            <string>master</string>
+                            <string>mpiatliou</string>
+                            <string>mznak</string>
+                            <string>omonko</string>
+                            <string>stsitou</string>
+                            <string>ukuchynski</string>
+                            <string>ymaniukevich</string>
+                            <string>ypapkou</string>
+                            <string>ysokal</string>
+                        </a>
+                    </choices>
                     <name>BRANCH_NAME</name>
-                    <description/>
-                    <uuid>d2400de2-8697-4d96-a88a-7a25d817096f</uuid>
-                    <type>PT_BRANCH</type>
-                    <branch/>
-                    <tagFilter/>
-                    <sortMode>NONE</sortMode>
-                    <defaultValue/>
-                </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
+                </hudson.model.ChoiceParameterDefinition>
                 <hudson.model.ChoiceParameterDefinition>
                     <choices class="java.util.Arrays$ArrayList">
                         <a class="string-array">
