@@ -20,7 +20,7 @@
                 <org.biouno.unochoice.ChoiceParameter>
                     <name>BUILDS_TRIGGER</name>
                     <description>Select the jobs</description>
-                    <randomName>choice-parameter-107082974605741</randomName>
+                    <randomName>choice-parameter-107132219076860</randomName>
                     <visibleItemCount>1</visibleItemCount>
                     <script class="org.biouno.unochoice.model.GroovyScript">
                         <script>["choice1", "choice2"]</script>
@@ -28,6 +28,18 @@
                     </script>
                     <filterable>false</filterable>
                     <choiceType>PT_CHECKBOX</choiceType>
+                </org.biouno.unochoice.ChoiceParameter>
+                <org.biouno.unochoice.ChoiceParameter>
+                    <name>CHOICE-1</name>
+                    <description>Allows user choose from multiple choices</description>
+                    <randomName>choice-parameter-107132223063285</randomName>
+                    <visibleItemCount>1</visibleItemCount>
+                    <script class="org.biouno.unochoice.model.GroovyScript">
+                        <script>["choice1", "choice2"]</script>
+                        <fallbackScript>"fallback choice"</fallbackScript>
+                    </script>
+                    <filterable>true</filterable>
+                    <choiceType>PT_SINGLE_SELECT</choiceType>
                 </org.biouno.unochoice.ChoiceParameter>
             </parameterDefinitions>
         </hudson.model.ParametersDefinitionProperty>
