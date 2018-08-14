@@ -20,7 +20,7 @@
                 <org.biouno.unochoice.ChoiceParameter>
                     <name>BUILDS_TRIGGER</name>
                     <description>Select the jobs</description>
-                    <randomName>choice-parameter-107132219076860</randomName>
+                    <randomName>choice-parameter-107140327091860</randomName>
                     <visibleItemCount>1</visibleItemCount>
                     <script class="org.biouno.unochoice.model.GroovyScript">
                         <script>["choice1", "choice2"]</script>
@@ -32,7 +32,7 @@
                 <org.biouno.unochoice.ChoiceParameter>
                     <name>CHOICE-1</name>
                     <description>Allows user choose from multiple choices</description>
-                    <randomName>choice-parameter-107132223063285</randomName>
+                    <randomName>choice-parameter-107140329851161</randomName>
                     <visibleItemCount>1</visibleItemCount>
                     <script class="org.biouno.unochoice.model.GroovyScript">
                         <script>["choice1", "choice2"]</script>
