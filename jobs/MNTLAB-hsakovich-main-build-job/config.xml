@@ -11,38 +11,24 @@
                 <hudson.model.ChoiceParameterDefinition>
                     <choices class="java.util.Arrays$ArrayList">
                         <a class="string-array">
-                            <string>aandryieuski</string>
-                            <string>aaranski</string>
-                            <string>akavaleu</string>
-                            <string>apatapniou</string>
-                            <string>disakau</string>
-                            <string>dzhukova</string>
-                            <string>hviniarski</string>
-                            <string>knovichuk</string>
+                            <string>hsakovich</string>
                             <string>master</string>
-                            <string>mpiatliou</string>
-                            <string>mznak</string>
-                            <string>omonko</string>
-                            <string>stsitou</string>
-                            <string>ukuchynski</string>
-                            <string>ymaniukevich</string>
-                            <string>ypapkou</string>
-                            <string>ysokal</string>
                         </a>
                     </choices>
                     <name>BRANCH_NAME</name>
                 </hudson.model.ChoiceParameterDefinition>
-                <hudson.model.ChoiceParameterDefinition>
-                    <choices class="java.util.Arrays$ArrayList">
-                        <a class="string-array">
-                            <string>MNTLAB-hsakovich-child1-build-job</string>
-                            <string>MNTLAB-hsakovich-child2-build-job</string>
-                            <string>MNTLAB-hsakovich-child3-build-job</string>
-                            <string>MNTLAB-hsakovich-child4-build-job</string>
-                        </a>
-                    </choices>
+                <org.biouno.unochoice.ChoiceParameter>
                     <name>BUILDS_TRIGGER</name>
-                </hudson.model.ChoiceParameterDefinition>
+                    <description/>
+                    <randomName>choice-parameter-105220801092902</randomName>
+                    <visibleItemCount>1</visibleItemCount>
+                    <script class="org.biouno.unochoice.model.GroovyScript">
+                        <script>getJobsToExecute((1..4))</script>
+                        <fallbackScript/>
+                    </script>
+                    <filterable>false</filterable>
+                    <choiceType>PT_CHECKBOX</choiceType>
+                </org.biouno.unochoice.ChoiceParameter>
             </parameterDefinitions>
         </hudson.model.ParametersDefinitionProperty>
     </properties>
