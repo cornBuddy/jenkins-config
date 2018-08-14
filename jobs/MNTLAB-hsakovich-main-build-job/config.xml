@@ -20,11 +20,11 @@
                 <org.biouno.unochoice.ChoiceParameter>
                     <name>BUILDS_TRIGGER</name>
                     <description/>
-                    <randomName>choice-parameter-105288039633027</randomName>
+                    <randomName>choice-parameter-105399718079156</randomName>
                     <visibleItemCount>1</visibleItemCount>
                     <script class="org.biouno.unochoice.model.GroovyScript">
                         <script>[MNTLAB-hsakovich-child1-build-job, MNTLAB-hsakovich-child2-build-job, MNTLAB-hsakovich-child3-build-job, MNTLAB-hsakovich-child4-build-job]</script>
-                        <fallbackScript/>
+                        <fallbackScript>"fallback choice"</fallbackScript>
                     </script>
                     <filterable>false</filterable>
                     <choiceType>PT_CHECKBOX</choiceType>
