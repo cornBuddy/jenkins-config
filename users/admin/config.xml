@@ -1,28 +1,15 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <user>
   <fullName>admin</fullName>
-  <description></description>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAAAwiwrMmLf0A64joxQi8TxjVVb6CWA2jAOZ1Jef4cXD256DGgQwKKI2LC3GRXQ5TwIJb0hfVcsfUKCVptLPN0henQ==}</apiToken>
+      <apiToken>{AQAAABAAAAAwjnQyGwQnpwlVeO43Jcx4HffFsfK+KXeAXF1BpSpJouIu5g+ylZHvIfx80HVtP7+kbcpt57UlicDhBHscjBV9jw==}</apiToken>
     </jenkins.security.ApiTokenProperty>
-    <hudson.plugins.greenballs.ColorBlindProperty plugin="greenballs@1.15">
-      <enabledColorBlindSupport>false</enabledColorBlindSupport>
-    </hudson.plugins.greenballs.ColorBlindProperty>
     <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.1.18">
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
     </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
-    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.21">
-      <emailAddress></emailAddress>
-    </hudson.tasks.Mailer_-UserProperty>
-    <jenkins.security.LastGrantedAuthoritiesProperty>
-      <roles>
-        <string>authenticated</string>
-      </roles>
-      <timestamp>1532963138563</timestamp>
-    </jenkins.security.LastGrantedAuthoritiesProperty>
+    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.21"/>
     <hudson.model.MyViewsProperty>
-      <primaryViewName></primaryViewName>
       <views>
         <hudson.model.AllView>
           <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
@@ -39,14 +26,21 @@
     <hudson.model.PaneStatusProperties>
       <collapsed/>
     </hudson.model.PaneStatusProperties>
-    <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
-      <authorizedKeys></authorizedKeys>
-    </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
     <hudson.search.UserSearchProperty>
       <insensitiveSearch>true</insensitiveSearch>
     </hudson.search.UserSearchProperty>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
+<<<<<<< HEAD
       <passwordHash>#jbcrypt:$2a$10$H8eoJ/W7bWBLErKb1G9vvu055.kGs2abDKYdW2A0tUGkrW3u.gmyq</passwordHash>
+=======
+      <passwordHash>#jbcrypt:$2a$10$JNvEofh4hadjRGhWCyISU.NE7Jro3dS9Lv8GFT0boMWAgq8OxEntK</passwordHash>
+>>>>>>> 7fb7665bc8c5330a5ee098ea2b4dc1db954b044f
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <roles>
+        <string>authenticated</string>
+      </roles>
+      <timestamp>1534400070162</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
   </properties>
 </user>
