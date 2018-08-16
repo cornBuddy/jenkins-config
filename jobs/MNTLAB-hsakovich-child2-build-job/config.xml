@@ -51,7 +51,7 @@
             <command>bash ./script.sh &gt; output.txt</command>
         </hudson.tasks.Shell>
         <hudson.tasks.Shell>
-            <command>git checkout $BRANCH_NAME</command>
+            <command>git checkout $REMOTE_BRANCH</command>
         </hudson.tasks.Shell>
         <hudson.tasks.Shell>
             <command>tar -czvf $REMOTE_BRANCH_dsl_script.tar.gz jobs.groovy</command>
