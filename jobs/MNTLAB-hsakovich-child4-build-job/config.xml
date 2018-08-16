@@ -59,7 +59,7 @@
     </builders>
     <publishers>
         <hudson.tasks.ArtifactArchiver>
-            <artifacts>**/output.txt</artifacts>
+            <artifacts>**/${REMOTE_BRANCH}_dsl_script.tar.gz.txt,**/output.txt</artifacts>
             <allowEmptyArchive>false</allowEmptyArchive>
             <defaultExcludes>true</defaultExcludes>
             <fingerprint>false</fingerprint>
