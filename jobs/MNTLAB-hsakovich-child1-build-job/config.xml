@@ -54,12 +54,12 @@
             <command>git checkout $REMOTE_BRANCH</command>
         </hudson.tasks.Shell>
         <hudson.tasks.Shell>
-            <command>tar -czvf $REMOTE_BRANCH_dsl_script.tar.gz jobs.groovy</command>
+            <command>tar -czvf ${REMOTE_BRANCH}_dsl_script.tar.gz jobs.groovy</command>
         </hudson.tasks.Shell>
     </builders>
     <publishers>
         <hudson.tasks.ArtifactArchiver>
-            <artifacts>./output.txt</artifacts>
+            <artifacts>**/output.txt</artifacts>
             <allowEmptyArchive>false</allowEmptyArchive>
             <defaultExcludes>true</defaultExcludes>
             <fingerprint>false</fingerprint>
