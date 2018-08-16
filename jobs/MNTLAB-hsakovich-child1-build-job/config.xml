@@ -46,10 +46,10 @@
             <command>bash ./script.sh &gt; output.txt</command>
         </hudson.tasks.Shell>
         <hudson.tasks.Shell>
-            <command>git checkout $BRANCH_NAME</command>
+            <command>git checkout ${BRANCH_NAME}</command>
         </hudson.tasks.Shell>
         <hudson.tasks.Shell>
-            <command>tar -czvf $REMOTE_BRANCH_dsl_script.tar.gz jobs.groovy</command>
+            <command>tar -czvf ${REMOTE_BRANCH}_dsl_script.tar.gz jobs.groovy</command>
         </hudson.tasks.Shell>
     </builders>
     <publishers>
@@ -70,7 +70,7 @@
         </userRemoteConfigs>
         <branches>
             <hudson.plugins.git.BranchSpec>
-                <name>$BRANCH_NAME</name>
+                <name>${BRANCH_NAME}</name>
             </hudson.plugins.git.BranchSpec>
         </branches>
         <configVersion>2</configVersion>
