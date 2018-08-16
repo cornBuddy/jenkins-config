@@ -3,6 +3,34 @@
     <description/>
     <keepDependencies>false</keepDependencies>
     <properties>
+        <hudson.model.ParametersDefinitionProperty>
+            <parameterDefinitions>
+                <hudson.model.ChoiceParameterDefinition>
+                    <choices class="java.util.Arrays$ArrayList">
+                        <a class="string-array">
+                            <string>aandryieuski</string>
+                            <string>aaranski</string>
+                            <string>akavaleu</string>
+                            <string>apatapniou</string>
+                            <string>disakau</string>
+                            <string>dzhukova</string>
+                            <string>hviniarski</string>
+                            <string>knovichuk</string>
+                            <string>master</string>
+                            <string>mpiatliou</string>
+                            <string>mznak</string>
+                            <string>omonko</string>
+                            <string>stsitou</string>
+                            <string>ukuchynski</string>
+                            <string>ymaniukevich</string>
+                            <string>ypapkou</string>
+                            <string>ysokal</string>
+                        </a>
+                    </choices>
+                    <name>REMOTE_BRANCH</name>
+                </hudson.model.ChoiceParameterDefinition>
+            </parameterDefinitions>
+        </hudson.model.ParametersDefinitionProperty>
         <com.coravy.hudson.plugins.github.GithubProjectProperty>
             <projectUrl>https://github.com/MNT-Lab/d323dsl/</projectUrl>
         </com.coravy.hudson.plugins.github.GithubProjectProperty>
@@ -15,16 +43,24 @@
     <concurrentBuild>false</concurrentBuild>
     <builders>
         <hudson.tasks.Shell>
-            <command>pwd</command>
+            <command>bash ./script.sh &gt; output.txt</command>
         </hudson.tasks.Shell>
         <hudson.tasks.Shell>
-            <command>ls -la</command>
+            <command>git checkout $BRANCH_NAME</command>
         </hudson.tasks.Shell>
         <hudson.tasks.Shell>
-            <command>echo []</command>
+            <command>tar -czvf $REMOTE_BRANCH_dsl_script.tar.gz jobs.groovy</command>
         </hudson.tasks.Shell>
     </builders>
-    <publishers/>
+    <publishers>
+        <hudson.tasks.ArtifactArchiver>
+            <artifacts>./output.txt</artifacts>
+            <allowEmptyArchive>false</allowEmptyArchive>
+            <defaultExcludes>true</defaultExcludes>
+            <fingerprint>false</fingerprint>
+            <onlyIfSuccessful>true</onlyIfSuccessful>
+        </hudson.tasks.ArtifactArchiver>
+    </publishers>
     <buildWrappers/>
     <scm class="hudson.plugins.git.GitSCM">
         <userRemoteConfigs>
@@ -34,7 +70,7 @@
         </userRemoteConfigs>
         <branches>
             <hudson.plugins.git.BranchSpec>
-                <name>**</name>
+                <name>$BRANCH_NAME</name>
             </hudson.plugins.git.BranchSpec>
         </branches>
         <configVersion>2</configVersion>
