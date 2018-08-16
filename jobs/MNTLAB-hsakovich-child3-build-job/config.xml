@@ -29,6 +29,11 @@
                     </choices>
                     <name>REMOTE_BRANCH</name>
                 </hudson.model.ChoiceParameterDefinition>
+                <hudson.model.StringParameterDefinition>
+                    <name>BRANCH_NAME</name>
+                    <defaultValue>$BRANCH_NAME</defaultValue>
+                    <description>WORKAROUND</description>
+                </hudson.model.StringParameterDefinition>
             </parameterDefinitions>
         </hudson.model.ParametersDefinitionProperty>
         <com.coravy.hudson.plugins.github.GithubProjectProperty>
