@@ -8,7 +8,7 @@
                 <org.biouno.unochoice.ChoiceParameter>
                     <name>BUILDS_TRIGGER</name>
                     <description>Select the jobs</description>
-                    <randomName>choice-parameter-83294276265778</randomName>
+                    <randomName>choice-parameter-84730678234449</randomName>
                     <visibleItemCount>1</visibleItemCount>
                     <script class="org.biouno.unochoice.model.GroovyScript">
                         <script>['MNTLAB-hsakovich-child1-build-job', 'MNTLAB-hsakovich-child2-build-job', 'MNTLAB-hsakovich-child3-build-job', 'MNTLAB-hsakovich-child4-build-job']</script>
