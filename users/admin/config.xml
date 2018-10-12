@@ -29,14 +29,14 @@
     <hudson.search.UserSearchProperty>
       <insensitiveSearch>true</insensitiveSearch>
     </hudson.search.UserSearchProperty>
-    <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>#jbcrypt:$2a$10$A6yuS2qVCZ14vvL8G/cz0ONhiuxoJUIOS8RvmmwARLwGbWs6qBEzq</passwordHash>
-    </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <jenkins.security.LastGrantedAuthoritiesProperty>
       <roles>
         <string>authenticated</string>
       </roles>
       <timestamp>1539345767216</timestamp>
     </jenkins.security.LastGrantedAuthoritiesProperty>
+    <hudson.security.HudsonPrivateSecurityRealm_-Details>
+      <passwordHash>#jbcrypt:$2a$10$kG4uqlQKW61BCrsqi.F72./CvczWGEIk6XRvLQ8vaHwb1oCQGgM6W</passwordHash>
+    </hudson.security.HudsonPrivateSecurityRealm_-Details>
   </properties>
 </user>
