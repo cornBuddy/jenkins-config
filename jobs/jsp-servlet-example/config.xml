@@ -13,7 +13,9 @@
     <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
       <configVersion>2</configVersion>
       <userRemoteConfigs>
-        <hudson.plugins.git.UserRemoteConfig/>
+        <hudson.plugins.git.UserRemoteConfig>
+          <url>https://github.com/cornBuddy/jsp-servlet-example/</url>
+        </hudson.plugins.git.UserRemoteConfig>
       </userRemoteConfigs>
       <branches>
         <hudson.plugins.git.BranchSpec>
