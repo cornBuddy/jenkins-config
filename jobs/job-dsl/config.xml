@@ -4,7 +4,20 @@
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
-  <scm class="hudson.scm.NullSCM"/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig/>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
@@ -13,6 +26,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.70">
+      <targets>jobs/*.groovy</targets>
       <scriptText>pipelineJob(&apos;jsp-servlet-example&apos;) {
   definition {
     cpsScm {
@@ -29,15 +43,15 @@
     }
   }
 }</scriptText>
-      <usingScriptText>true</usingScriptText>
+      <usingScriptText>false</usingScriptText>
       <sandbox>false</sandbox>
       <ignoreExisting>false</ignoreExisting>
       <ignoreMissingFiles>false</ignoreMissingFiles>
       <failOnMissingPlugin>true</failOnMissingPlugin>
       <unstableOnDeprecation>true</unstableOnDeprecation>
-      <removedJobAction>IGNORE</removedJobAction>
-      <removedViewAction>IGNORE</removedViewAction>
-      <removedConfigFilesAction>IGNORE</removedConfigFilesAction>
+      <removedJobAction>DISABLE</removedJobAction>
+      <removedViewAction>DELETE</removedViewAction>
+      <removedConfigFilesAction>DELETE</removedConfigFilesAction>
       <lookupStrategy>JENKINS_ROOT</lookupStrategy>
     </javaposse.jobdsl.plugin.ExecuteDslScripts>
   </builders>
