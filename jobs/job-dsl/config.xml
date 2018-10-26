@@ -1,15 +1,45 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
+  <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
-  <canRoam>false</canRoam>
+  <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.70">
+      <scriptText>pipelineJob(&apos;jsp-servlet-example&apos;) {
+  definition {
+    cpsScm {
+      lightweight true
+      scriptPath &apos;Jenkinsfile&apos;
+      scm {
+        git {
+          branch &apos;master&apos; 
+          remote {
+            url &apos;https://github.com/cornBuddy/jsp-servlet-example&apos;
+          }
+        }
+      }
+    }
+  }
+}</scriptText>
+      <usingScriptText>true</usingScriptText>
+      <sandbox>false</sandbox>
+      <ignoreExisting>false</ignoreExisting>
+      <ignoreMissingFiles>false</ignoreMissingFiles>
+      <failOnMissingPlugin>true</failOnMissingPlugin>
+      <unstableOnDeprecation>true</unstableOnDeprecation>
+      <removedJobAction>IGNORE</removedJobAction>
+      <removedViewAction>IGNORE</removedViewAction>
+      <removedConfigFilesAction>IGNORE</removedConfigFilesAction>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.ExecuteDslScripts>
+  </builders>
   <publishers/>
   <buildWrappers/>
 </project>
