@@ -1,6 +1,8 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <hudson>
-  <disabledAdministrativeMonitors/>
+  <disabledAdministrativeMonitors>
+    <string>jenkins.security.csrf.CSRFAdministrativeMonitor</string>
+  </disabledAdministrativeMonitors>
   <version>2.121.1</version>
   <installStateName>RUNNING</installStateName>
   <numExecutors>2</numExecutors>
@@ -30,7 +32,7 @@
     </hudson.model.AllView>
   </views>
   <primaryView>all</primaryView>
-  <slaveAgentPort>0</slaveAgentPort>
+  <slaveAgentPort>50000</slaveAgentPort>
   <label></label>
   <nodeProperties/>
   <globalNodeProperties/>
