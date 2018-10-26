@@ -13,7 +13,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.70">
-      <scriptText>pipelineJob &apos;jsp-servlet-example&apos; {
+      <scriptText>pipelineJob(&apos;jsp-servlet-example&apos;) {
   definition {
     cpsScm {
       lightweight true
